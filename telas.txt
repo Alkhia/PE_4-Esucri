@@ -29,3 +29,31 @@
 -------avais (1 e 2)
 -------entrevista pais (1 e 2)
 -------resultado
+
+| Coluna                       | Tipo         | Observações              |
+| ---------------------------- | ------------ | ------------------------ |
+| `id_usuario`                 | INT          | **PK** (Auto-incremento) |
+| `nome`                       | VARCHAR(255) | -                        |
+| `cpf`                        | VARCHAR(11)  | **PK** (Único, válido)   |
+| `data_nascimento`            | DATE         | -                        |
+| `data_admissao`              | DATE         | -                        |
+| `nome_mae`                   | VARCHAR(255) | -                        |
+| `nome_pai`                   | VARCHAR(255) | -                        |
+| `trabalha`                   | BOOLEAN      | -                        |
+| `endereco`                   | VARCHAR(255) | -                        |
+| `numero_responsavel`         | INT          | -                        |
+| `funcao`                     | VARCHAR(100) | -                        |
+| `provavel_data_desligamento` | DATE         | -                        |
+
+
+| Coluna               | Tipo         | Observações              |
+| -------------------- | ------------ | ------------------------ |
+| `id_empresa`         | INT          | **PK** (Auto-incremento) |
+| `razao_social`       | VARCHAR(255) | -                        |
+| `nome_fantasia`      | VARCHAR(255) | -                        |
+| `cnpj`               | VARCHAR(14)  | **PK** (Único, válido)   |
+| `inscricao_estadual` | VARCHAR(20)  | -                        |
+| `endereco`           | VARCHAR(255) | -                        |
+| `numero_contato_rh`  | VARCHAR(15)  | -                        |
+| `renda`              | INT          | -                        |
+
