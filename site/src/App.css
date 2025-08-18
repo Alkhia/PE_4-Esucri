@@ -1,21 +1,81 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent; 
 }
+
+
+.app-container {
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+
+ /* titulo */
+h1, h2 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+
+.btn {
+  margin: 12px 8px;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #005fcc;
+  box-shadow: 0 6px 20px rgba(0, 95, 204, 0.6);
+  outline: none;
+}
+
 
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms ease-in-out;
+  user-select: none;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cffcc);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #61dafbcc);
 }
 
 @keyframes logo-spin {
@@ -33,10 +93,18 @@
   }
 }
 
+
 .card {
+  background: #fff;
   padding: 2em;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
+
 
 .read-the-docs {
   color: #888;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
 }
