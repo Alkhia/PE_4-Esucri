@@ -1,0 +1,84 @@
+body, html {
+  height: 100%;
+  margin: 0px;
+  background-color: #f0f2f5;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #7e7e7e #f0f2f5;
+}
+
+.cadastro-alunos-container {
+  background: white;
+  margin: 40px;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-alunos-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cadastro-alunos-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cadastro-alunos-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cadastro-alunos-input {
+  margin-top: 6px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cadastro-alunos-button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cadastro-alunos-button:hover {
+  background-color: #1259a7;
+}
+
+.cadastro-alunos-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #eee;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.cadastro-alunos-back:hover {
+  background-color: #ddd;
+}
+
+
+
+
