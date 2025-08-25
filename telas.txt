@@ -22,6 +22,9 @@
 =====================================================
 ---Avaliação periodo experiencia
 ------primeira ou segunda (questionarios)
+------aluno(selecionar aluno cadastrado)
+------data inicio(seleciona automaticamente do cadastro)
+------data final(seleciona automaticamente do cadastro)
 ------perguntas dos formularios SAV (questionarios)
 =====================================================
 ---CONTROLE INTERNO – AVALIAÇÃO USUÁRIOS PERÍODO EXPERIÊNCIA 

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './App.css';
-import React from 'react';
 import CadastroAlunos from './CadastroAlunos/cadastroAlunos';
 import CadastroEmpresas from "./CadastroEmpresas/cadastroEmpresas";
+import AvaliacaoExperiencia from "./AvaliacaoDesempenho/avaliacao";
 
 function App() {
   return (
@@ -13,6 +13,9 @@ function App() {
   </Link>
   <Link to="/cadastroEmpresas">
     <button className="btn">Cadastrar Empresas</button>
+  </Link>
+  <Link to = "/avaliacao">
+    <button className="btn">Avaliação de Alunos</button>
   </Link>
 </div>
   );
@@ -25,6 +28,7 @@ function Cadastro() {
         <Route path="/" element={<App />} />
         <Route path="/cadastroAlunos" element={<CadastroAlunos />} />
         <Route path="/cadastroEmpresas" element={<CadastroEmpresas />} />
+        <Route path="/avaliacao" element={<AvaliacaoExperiencia />} />
       </Routes>
     </Router>
   );

@@ -1,16 +1,21 @@
-body, html {
-  height: 100%;
-  margin: 0px;
-  background-color: #f0f2f5;
-  overflow-y: auto;
+html, body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  scrollbar-width: thin;
-  scrollbar-color: #7e7e7e #f0f2f5;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: #333;
 }
 
 .cadastro-empresas-container {
-  background: white;
-  padding: 20px 30px;
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  margin: 40px auto;
   border-radius: 8px;
   max-width: 600px;
   width: 100%;
@@ -20,6 +25,9 @@ body, html {
 .cadastro-empresas-title {
   text-align: center;
   margin-bottom: 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .cadastro-empresas-form {
@@ -31,8 +39,9 @@ body, html {
 .cadastro-empresas-label {
   display: flex;
   flex-direction: column;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
+  color: #444;
 }
 
 .cadastro-empresas-input {
@@ -41,12 +50,22 @@ body, html {
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  color: #333;
+}
+
+.cadastro-empresas-input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 4px rgba(25, 118, 210, 0.4);
 }
 
 .cadastro-empresas-button {
   margin-top: 20px;
   padding: 10px;
   font-size: 16px;
+  font-weight: bold;
   background-color: #1976d2;
   color: white;
   border: none;
@@ -60,7 +79,7 @@ body, html {
 }
 
 .cadastro-empresas-back {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   background-color: #eee;
@@ -72,6 +91,7 @@ body, html {
   font-weight: bold;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+  z-index: 1000;
 }
 
 .cadastro-empresas-back:hover {
