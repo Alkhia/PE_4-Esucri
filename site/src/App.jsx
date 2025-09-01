@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CadastroAlunos from "./CadastroAlunos/cadastroAlunos";
 import CadastroEmpresas from "./CadastroEmpresas/cadastroEmpresas";
 import AvaliacaoExperiencia from "./AvaliacaoDesempenho/avaliacao";
-import CadastroEmpresas from "./CadastroEmpresas/cadastroEmpresas";
+import cadastroFuncionarios from "./CadastroFuncionario"; 
 
 function App() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -59,6 +59,7 @@ function Cadastro() {
         <Route path="/cadastroAlunos" element={<CadastroAlunos />} />
         <Route path="/cadastroEmpresas" element={<CadastroEmpresas />} />
         <Route path="/avaliacao" element={<AvaliacaoExperiencia />} />
+        <Route path="/cadastroFuncionarios" element={<CadastroFuncionarios />} />
       </Routes>
     </Router>
   );
