@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CadastroAlunos from "./CadastroAlunos/cadastroAlunos";
 import CadastroEmpresas from "./CadastroEmpresas/cadastroEmpresas";
 import AvaliacaoExperiencia from "./AvaliacaoDesempenho/avaliacao";
+import CadastroEmpresas from "./CadastroEmpresas/cadastroEmpresas";
 
 function App() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -42,6 +43,9 @@ function App() {
       </Link>
       <Link to="/avaliacao">
         <button className="btn">Avaliação de Alunos</button>
+      </Link>
+      <Link to="/cadastroFuncionarios">
+        <button className="btn">Cadastro de Funcionarios</button>
       </Link>
     </div>
   );
