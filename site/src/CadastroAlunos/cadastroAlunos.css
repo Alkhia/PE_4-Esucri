@@ -17,7 +17,7 @@ html, body {
   padding: 2rem 2.5rem;
   margin: 40px auto;
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 100%;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

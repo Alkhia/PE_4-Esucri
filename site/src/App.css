@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
+  background-color: #ffffff;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -23,28 +23,27 @@ html, body {
   padding: 2.5rem 3rem;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  max-width: 600px;
+  max-width: 2040px;
   width: 100%;
   margin: 3rem auto 0 auto;
 }
 
-h1, h2 {
-  color: #333;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
+  h1, h2 {
+    font-size: 2rem;
+  }
+
 
 .btn {
-  margin: 12px 8px;
-  padding: 14px 28px;
+  margin: 8px 8px;
+  padding: 8px 5px;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
-  background-color: #0077ff;
-  color: #fff;
+  background-color: #0c10e7;
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(14, 67, 128, 0.4);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -76,11 +75,12 @@ h1, h2 {
   to { transform: rotate(360deg); }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (min-width: 768px) {
+  .app-container {
+    padding: 3rem 4rem;
   }
 }
+
 
 .card {
   background: #fff;
